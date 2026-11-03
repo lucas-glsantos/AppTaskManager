@@ -1,6 +1,4 @@
 import { useState, useEffect } from "react";
-import Navbar from "../components/Navbar";
-import Footer from "../components/Footer";
 import RateLimitedUI from "../components/RateLimitedUI";
 import TaskCard from "../components/TaskCard";
 import TasksNotFound from "../components/TasksNotFound";
@@ -20,7 +18,6 @@ const HomePage = () => {
         setTasks(res.data);
         setIsRateLimited(false);
       } catch (error) {
-        console.log("Erro ao buscar tarefas", error.response);
         if (error.response?.status === 429){
           setIsRateLimited(true);
         } else {
@@ -36,7 +33,6 @@ const HomePage = () => {
 
   return (
     <div className="min-h-screen flex flex-col bg-base-100">
-      <Navbar />
 
       {isRateLimited && <RateLimitedUI />}
 
@@ -57,7 +53,6 @@ const HomePage = () => {
           </div>
         )}
       </main>
-      <Footer />
     </div>
   );
 };

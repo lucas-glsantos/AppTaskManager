@@ -5,40 +5,23 @@ import CreatePage from "./pages/TaskCreatePage";
 import TaskDetailPage from "./pages/TaskDetailPage";
 import LoginPage from "./pages/auth/LoginPage";
 import { PublicRoute, ProtectedRoute } from "./components/ProtectedRoute";
-import ErrorPage from "./components/features/ErrorPage";
+import AppLayout from "./components/AppLayout";
+import ThemeSettingsPage from "./pages/settings/ThemeSettings";
 
 const App = () => {
   return (
-    <div className="min-h-screen w-full" data-theme="light">
-      <ErrorPage />
+    <div className="min-h-screen w-full">
       <Routes>
         <Route path="*" element={<Navigate to="/" replace />} />
         <Route path="/login" element={<PublicRoute> <LoginPage /> </PublicRoute>} />
 
-        <Route 
-          path="/" 
-          element={
-            <ProtectedRoute>
-              <HomePage />
-            </ProtectedRoute>
-          }
-        />
-        <Route 
-          path="/create" 
-          element={
-            <ProtectedRoute>
-              <CreatePage />
-            </ProtectedRoute>
-          }
-        />
-        <Route 
-          path="/task/:id" 
-          element={
-            <ProtectedRoute>
-              <TaskDetailPage />
-            </ProtectedRoute>
-          } 
-        />
+        <Route element={<ProtectedRoute> <AppLayout /> </ProtectedRoute>} >
+          <Route path="/" element={<HomePage />} />
+          <Route path="/create" element={<CreatePage />} />
+          <Route path="/task/:id" element={<TaskDetailPage />} />
+          <Route path="/settings/theme" element={<ThemeSettingsPage />} />
+        </Route>
+
       </Routes>
     </div>
   );

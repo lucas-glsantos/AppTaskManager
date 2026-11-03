@@ -8,6 +8,6 @@ export default {
   },
   plugins: [daisyui],
   daisyui: {
-    themes: ["light", "dark", "dim"],
+    themes: ["light", "dark", "dim", "forest", "aqua"],
   }
 };

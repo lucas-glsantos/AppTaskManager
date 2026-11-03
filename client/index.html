@@ -1,7 +1,17 @@
 <!doctype html>
-<html lang="pt-BR">
+<html lang="pt-BR" data-theme="light">
 	<head>
 		<meta charset="UTF-8" />
+		<script>
+			(function () {
+				try {
+					var theme = localStorage.getItem("tm_theme");
+					if (theme) document.documentElement.setAttribute("data-theme", theme);
+				} catch (error) {
+					/* storage bloqueado: mantém o tema padrão*/
+				}
+			})();
+		</script>
 		<link rel="icon" type="image/svg+xml" href="" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<title>Task Manager</title>
