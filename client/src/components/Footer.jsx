@@ -7,7 +7,7 @@ const Footer = () => {
             <div className="mx-auto max-w-6xl p-6">
                 <div className="flex flex-col md:flex-row items-center justify-between gap-6">
 
-                    <div className="text-base-content/70 text-sm font-medium hover:text-primary transition-all duration-300 hover:scale-110">
+                    <div className="text-base-content/70 text-sm font-medium">
                         <p>
                             Developed by <span className="text-primary">Lucas Santos </span>
                             | ©{currentYear} Todos os direitos reservados.
@@ -19,7 +19,7 @@ const Footer = () => {
                             href="https://www.linkedin.com/in/lucasglsantos/"
                             target="_blank"
                             rel="noopener noreferrer"
-                            className="text-base-content/70 hover:text-primary transition-all duration-300 hover:scale-110"
+                            className="text-base-content/70 hover:text-primary"
                             title="LinkedIn"
                         >
                             <div className="size-5" />
@@ -29,7 +29,7 @@ const Footer = () => {
                             href="https://github.com/lucas-glsantos/"
                             target="_blank"
                             rel="noopener noreferrer"
-                            className="text-base-content/70 hover:text-primary transition-all duration-300 hover:scale-110"
+                            className="text-base-content/70 hover:text-primary"
                             title="GitHub"
                         >
                             <div className="size-5" />
