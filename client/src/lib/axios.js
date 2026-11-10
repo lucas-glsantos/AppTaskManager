@@ -1,5 +1,5 @@
 import axios from "axios";
-import { clearSession, getRefreshToken, getToken, tryRecover, updateSessionTokens } from "./auth";
+import { clearSession, getRefreshToken, getToken, tryRecover, updateSessionTokens } from "@/lib/auth";
 
 const BASE_URL = "/api";
 

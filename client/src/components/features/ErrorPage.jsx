@@ -1,4 +1,4 @@
-import ErrorModal from './ErrorModal';
+import ErrorModal from '@/components/features/ErrorModal';
 
 
 

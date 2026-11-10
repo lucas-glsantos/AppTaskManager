@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { useNavigate } from "react-router";
 import toast from "react-hot-toast";
-import { useAuth } from "../../context/AuthContext";
+import { useAuth } from "@/context/AuthContext";
 
 
 // Regras de Negócio: Nome >= 4 caracteres, Email válido, Senha >= 8 caracteres no registro

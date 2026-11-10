@@ -1,7 +1,7 @@
 import { PenSquareIcon, Trash2Icon } from "lucide-react";
 import { useNavigate } from "react-router";
-import { formatDate } from "../lib/utils";
-import api from "../lib/axios";
+import { formatDate } from "@/lib/utils";
+import api from "@/lib/axios";
 import toast from "react-hot-toast";
 import { useState } from "react";
 

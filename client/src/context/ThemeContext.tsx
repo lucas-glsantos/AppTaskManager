@@ -1,7 +1,7 @@
 import { createContext, useCallback, useContext, useEffect, useMemo, useState, type ReactNode } from "react";
-import { DEFAULT_THEME, THEMES, isTheme, type Theme } from "../lib/themes";
+import { DEFAULT_THEME, THEMES, isTheme, type Theme } from "@/lib/themes";
 
-export { THEMES, type Theme } from "../lib/themes";
+export { THEMES, type Theme } from "@/lib/themes";
 
 const STORAGE_KEY = "tm_theme";
 

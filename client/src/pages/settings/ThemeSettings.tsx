@@ -1,6 +1,6 @@
 import { Check, Droplets, Moon, Palette, Sun, Trees, type LucideIcon } from "lucide-react";
-import { THEMES, useTheme, type Theme } from "../../context/ThemeContext";
-import { THEME_OPTIONS } from "../../lib/themes";
+import { useTheme, type Theme } from "@/context/ThemeContext";
+import { THEME_OPTIONS } from "@/lib/themes";
 
 const ThemeSettingsPage = () => {
   const { theme, setTheme } = useTheme();

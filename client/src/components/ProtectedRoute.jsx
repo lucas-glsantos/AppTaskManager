@@ -1,6 +1,6 @@
 import { Navigate, useLocation } from "react-router";
-import { useAuth } from "../context/AuthContext"
-import LoadingScreen from "./loader/LoadingScreen";
+import { useAuth } from "@/context/AuthContext"
+import LoadingScreen from "@/components/loader/LoadingScreen";
 
 // Rota Privada: Logado -> "/", "/create", "/task/:id"
 export function ProtectedRoute({ children }) {

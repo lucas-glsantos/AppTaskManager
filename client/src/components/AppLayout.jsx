@@ -1,9 +1,9 @@
 import { useCallback, useState } from "react";
-import { useAuth } from "../context/AuthContext";
-import Navbar from "./Navbar";
-import { Sidebar } from "../components/Sidebar";
+import { useAuth } from "@/context/AuthContext";
+import Navbar from "@/components/Navbar";
+import { Sidebar } from "@/components/Sidebar";
 import { Outlet, useNavigate } from "react-router";
-import Footer from "./Footer";
+import Footer from "@/components/Footer";
 
 const AppLayout = () => {
     const [open, setOpen] = useState(false);

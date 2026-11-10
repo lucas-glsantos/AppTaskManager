@@ -1,9 +1,9 @@
 import { useState, useEffect } from "react";
-import RateLimitedUI from "../components/RateLimitedUI";
-import TaskCard from "../components/TaskCard";
-import TasksNotFound from "../components/TasksNotFound";
+import RateLimitedUI from "@/components/RateLimitedUI";
+import TaskCard from "@/components/TaskCard";
+import TasksNotFound from "@/components/TasksNotFound";
 import toast from "react-hot-toast";
-import api from "../lib/axios";
+import api from "@/lib/axios";
 
 const HomePage = () => {
   const [isRateLimited, setIsRateLimited] = useState(false);

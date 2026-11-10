@@ -1,7 +1,7 @@
 
 import { NavLink, useLocation } from "react-router";
 import { Home, ListTodo, LogOut, Palette, Plus, User, X, type LucideIcon } from "lucide-react";
-import type { AuthUser } from "../types/auth";
+import type { AuthUser } from "@/types/auth";
 import { type FC, type MouseEvent as ReactMouseEvent, type TouchEvent as ReactTouchEvent, useEffect, useRef } from "react";
 
 

@@ -1,7 +1,7 @@
 
 import { createContext, useState, useEffect, useCallback, useContext } from "react";
-import api from "../lib/axios";
-import { clearSession, getStoredUser, getToken, initAuthSync, isDegraded, mapAuthError, saveSession, tryRecover } from "../lib/auth";
+import api from "@/lib/axios";
+import { clearSession, getStoredUser, getToken, initAuthSync, isDegraded, mapAuthError, saveSession, tryRecover } from "@/lib/auth";
 import toast from "react-hot-toast";
 
 

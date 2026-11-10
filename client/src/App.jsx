@@ -1,12 +1,12 @@
 import { Navigate, Route, Routes } from "react-router";
 
-import HomePage from "./pages/HomePage";
-import CreatePage from "./pages/TaskCreatePage";
-import TaskDetailPage from "./pages/TaskDetailPage";
-import LoginPage from "./pages/auth/LoginPage";
-import { PublicRoute, ProtectedRoute } from "./components/ProtectedRoute";
-import AppLayout from "./components/AppLayout";
-import ThemeSettingsPage from "./pages/settings/ThemeSettings";
+import HomePage from "@/pages/HomePage";
+import CreatePage from "@/pages/TaskCreatePage";
+import TaskDetailPage from "@/pages/TaskDetailPage";
+import LoginPage from "@/pages/auth/LoginPage";
+import { PublicRoute, ProtectedRoute } from "@/components/ProtectedRoute";
+import AppLayout from "@/components/AppLayout";
+import ThemeSettingsPage from "@/pages/settings/ThemeSettings";
 
 const App = () => {
   return (
